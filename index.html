@@ -7,6 +7,12 @@
   </head>
   <body>
     <section>
+      <form class="" action="index.html" method="post">
+        <label for="search">Search</label>
+        <input type="search" name="search" id="search">
+      </form>
+    </section>
+    <section>
       <form action="#" method="post">
         <!-- <div class="two-columns">
           <label for="name">Name</label>
@@ -24,10 +30,42 @@
         <label for="pass">Password</label>
         <input type="password" name="pass" id="pass" placeholder="pick a password">
 
-        <input type="radio" name="sex" id="fem" value="f">
-        <label for="fem">Female</label>
-        <input type="radio" name="sex" id="male" value="m">
-        <label for="male">Male</label>
+        <fieldset>
+          <legend>Select your sex</legend>
+          <input type="radio" name="sex" id="fem" value="f">
+          <label for="fem">Female</label>
+          <input type="radio" name="sex" id="male" value="m">
+          <label for="male">Male</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Select all your preferences</legend>
+          <input type="checkbox" name="sex" id="p1" value="p1">
+          <label for="p1">Preference 1</label>
+          <input type="checkbox" name="sex" id="p2" value="p2">
+          <label for="p2">Preference 2</label>
+          <input type="checkbox" name="sex" id="p3" value="p3">
+          <label for="p3">Preference 3</label>
+        </fieldset>
+
+        <label for="birthday"></label>
+        <input type="date" name="birthday" id="birthday">
+
+        <label for="awake">Awake time</label>
+        <input type="time" name="awake" id="awake">
+
+
+        <label for="service">Grade the service</label>
+        <input type="range" name="service" id="service" min="0" max="10" step="2">
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="18">
+
+        <label for="fb">Facebook</label>
+        <input type="url" name="fb" id="url">
+
+        <label for="tel">Phone</label>
+        <input type="tel" name="tel" id="tel">
 
         <button type="submit" name="button">Login</button>
       </form>
