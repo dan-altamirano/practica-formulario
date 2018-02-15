@@ -13,23 +13,15 @@
       </form>
     </section>
     <section>
-      <form action="#" method="post">
-        <!-- <div class="two-columns">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="Your name">
-          <label for="lastname">Lastname</label>
-          <input type="text" name="lastname" id="lastname" placeholder="Your lastname">
-        </div>
-        <div class="initial-group">
-
-        </div> -->
+      <form action="#" method="post" enctype="multipart/form-data">
         <label for="username">Username</label>
         <input type="text" name="username" id="username" placeholder="Pick a username">
         <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="Pick an email">
         <label for="pass">Password</label>
         <input type="password" name="pass" id="pass" placeholder="pick a password">
-
+        <label for="avatar">Upload your picture</label>
+        <input type="file" name="avatar" id="avatar" accept="image/jpeg">
         <fieldset>
           <legend>Select your sex</legend>
           <input type="radio" name="sex" id="fem" value="f">
@@ -37,7 +29,6 @@
           <input type="radio" name="sex" id="male" value="m">
           <label for="male">Male</label>
         </fieldset>
-
         <fieldset>
           <legend>Select all your preferences</legend>
           <input type="checkbox" name="sex" id="p1" value="p1">
@@ -47,27 +38,21 @@
           <input type="checkbox" name="sex" id="p3" value="p3">
           <label for="p3">Preference 3</label>
         </fieldset>
-
         <label for="birthday"></label>
         <input type="date" name="birthday" id="birthday">
-
         <label for="awake">Awake time</label>
         <input type="time" name="awake" id="awake">
-
-
         <label for="service">Grade the service</label>
         <input type="range" name="service" id="service" min="0" max="10" step="2">
-
         <label for="age">Age</label>
         <input type="number" name="age" id="age" min="18">
-
         <label for="fb">Facebook</label>
         <input type="url" name="fb" id="url">
-
         <label for="tel">Phone</label>
         <input type="tel" name="tel" id="tel">
-
-        <button type="submit" name="button">Login</button>
+        <label for="color">Your favorite color</label>
+        <input type="color" name="color" id="color">
+        <button type="submit" name="button">Sign up</button>
       </form>
     </section>
   </body>
